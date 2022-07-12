@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do Tasks</title>
+    <link rel="stylesheet" href="node_modules\bulma\css\bulma.css">
+     <script src="functions/jquery.js"></script>
+    <script src="functions/name.js"></script>
+    
+    <script src="functions/weather.js"></script>
+    <script src="functions/todo.js"></script>
+
+    <style>
+        .mainbg {
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-Image: url(https://pixabay.com/get/g6c5383041bfb7e755db5d2fdf450637e0cb28fe6324b83aa6710ef9efa87afbe95f901041dfc97ff29c1fada2d18ab08be5cc54a47a904da0a96a1c3d22c4a67_1280.png);
+        }
+
+        .trans {
+            height: 100vh;
+            background-color: #0000007a;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mainbg">
+        <div class="trans">
+            <section class="section">
+                <div class="container">
+                    <div class="columns">
+                        <div class="column is-10">
+                            <progress class="progress is-success" value="60" max="10">60%</progress>
+                        </div>
+                        <div class="column is-5" id="weather">
+                            <p class="has-text-white has-text-weight-bold">weather</p>
+                            <p class="has-text-white has-text-weight-bold">Weather</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <div class="columns is-centered">
+                        <div class="column is-half" id="name">
+                            <div class="control">
+                                <input class="input is-large is-focused is-primary is-rounded" type="text"
+                                    placeholder="Enter your name">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <div class="columns is-centered">
+                        <div class="column is-two-thirds">
+                            <div class="control">
+                                <input id="todo" class="input is-rounded" placeholder="Enter your tasks">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columns is-mobile is-centered">
+                        <div class="column is-half ml-6" >
+                            <div class="block">
+                                <div class="content is-large" class="has-text-white has-text-weight-bold">
+                                <ul id="todoSection">
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>
